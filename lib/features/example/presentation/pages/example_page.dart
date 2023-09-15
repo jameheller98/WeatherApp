@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Template extends StatelessWidget {
-  const Template({super.key});
+class ExamplePage extends StatelessWidget {
+  const ExamplePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Template'),
+        title: const Text('Example'),
       ),
-      body: const SizedBox.shrink(),
     );
   }
 }
