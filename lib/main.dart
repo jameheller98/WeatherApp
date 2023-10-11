@@ -71,6 +71,7 @@ class MainView extends StatelessWidget {
       darkTheme: darkTheme,
       themeMode: ThemeMode.system,
       routerConfig: routerController,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

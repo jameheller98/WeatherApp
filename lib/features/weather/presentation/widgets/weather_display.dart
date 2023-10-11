@@ -63,11 +63,27 @@ class WeatherDisplay extends StatelessWidget {
               builder: (context, state) => Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(
-                    getConditionByWeatherCode(
-                      state.currentWeather?.daily.weatherCode[0] ?? -1,
-                    ).toEmoji,
-                    style: const TextStyle(fontSize: 100),
+                  Column(
+                    children: [
+                      Text(
+                        getConditionByWeatherCode(
+                          state.currentWeather?.daily.weatherCode[0] ?? -1,
+                        ).toEmoji,
+                        style: const TextStyle(fontSize: 100),
+                      ),
+                      Text(
+                        getConditionByWeatherCode(
+                              state.currentWeather?.daily.weatherCode[0] ?? -1,
+                            ).name[0].toUpperCase() +
+                            getConditionByWeatherCode(
+                              state.currentWeather?.daily.weatherCode[0] ?? -1,
+                            ).name.substring(1),
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.onBackground,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
                   ),
                   Column(
                     children: [
