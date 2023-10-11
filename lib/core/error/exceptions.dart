@@ -1,1 +1,3 @@
-class ExampleException implements Exception {}
+class WeatherException implements Exception {}
+
+class GeocodingException implements Exception {}

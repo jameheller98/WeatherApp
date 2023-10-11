@@ -1,13 +1,13 @@
 import 'package:go_router/go_router.dart';
 
-import 'package:core_flutter_bloc/features/example/presentation/presentation.dart';
+import 'package:core_flutter_bloc/features/weather/presentation/presentation.dart';
 
-part 'example_routes.dart';
+part 'weather_routes.dart';
 
 // GoRouter configuration
 final routerController = GoRouter(
-  initialLocation: '/login',
+  initialLocation: '/weather',
   routes: [
-    ..._exampleRoutes,
+    ..._weatherRoutes,
   ],
 );
