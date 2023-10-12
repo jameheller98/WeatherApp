@@ -14,3 +14,9 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+# Tutorial use app
+
+After clone repository we can run app two ways: use Emulator (Android Studio), Simulator(Xcode) or Debug by USB Cable connect to your phone.
+
+You can check documents folder in root projects to use Flutter, Android Studio and Weather App.
