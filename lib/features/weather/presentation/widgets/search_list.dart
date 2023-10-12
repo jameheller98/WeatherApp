@@ -10,6 +10,8 @@ class SearchList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bottom = MediaQuery.of(context).viewInsets.bottom;
+
     return BlocBuilder<ListLocationBloc, ListLocationState>(
       builder: (context, state) {
         return state.status == StatusLocation.loading
@@ -21,7 +23,8 @@ class SearchList extends StatelessWidget {
               )
             : state.status == StatusLocation.success &&
                     state.locations.isNotEmpty
-                ? Column(
+                ? ListView(
+                    padding: EdgeInsets.only(bottom: bottom),
                     children: [
                       for (int i = 0; i < state.locations.length; i++)
                         ListTile(
